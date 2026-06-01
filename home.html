@@ -1,0 +1,522 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Abajifar Palace</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#eef7f1;
+        }
+
+        /* NAVBAR */
+        .navbar{
+
+            position:fixed;
+
+            top:0;
+            left:0;
+
+            width:100%;
+
+            display:flex;
+
+            justify-content:space-between;
+
+            align-items:center;
+
+            background:#e8f5e9;
+
+            padding:12px 20px;
+
+            box-shadow:0 2px 10px lightgray;
+
+            z-index:1000;
+        }
+
+        /* LOGO */
+        .logo{
+
+            width:70px;
+            height:70px;
+
+            border-radius:50%;
+
+            object-fit:cover;
+        }
+
+        /* TITLE */
+        .nav-title{
+
+            font-size:30px;
+
+            font-weight:bold;
+
+            color:#5c3317;
+
+            flex:1;
+
+            text-align:center;
+
+            margin-left:20px;
+        }
+
+        /* MENU ICON */
+        .menu-icon{
+
+            font-size:38px;
+
+            margin-right:40px;
+
+            cursor:pointer;
+
+            color:black;
+
+            background:white;
+
+            padding:5px 18px;
+
+            border-radius:15px;
+
+            box-shadow:0 0 10px lightgray;
+
+            transition:0.3s;
+        }
+
+        .menu-icon:hover{
+
+            background:#f0f0f0;
+
+            transform:scale(1.05);
+        }
+
+        /* SIDEBAR */
+        .menu{
+
+            position:fixed;
+
+            top:0;
+            right:-320px;
+
+            width:280px;
+            height:100vh;
+
+            background:black;
+
+            padding-top:80px;
+
+            transition:0.5s;
+
+            z-index:2000;
+
+            overflow-y:auto;
+
+            box-shadow:-3px 0 10px gray;
+        }
+
+        /* CLOSE BUTTON */
+        .close-btn{
+
+            position:absolute;
+
+            top:20px;
+            right:25px;
+
+            font-size:36px;
+
+            cursor:pointer;
+
+            color:white;
+        }
+
+        /* MENU LINKS */
+        .menu a{
+
+            display:block;
+
+            text-decoration:none;
+
+            color:white;
+
+            padding:16px 30px;
+
+            font-size:20px;
+
+            transition:0.3s;
+        }
+
+        .menu a:hover{
+
+            background:#333;
+
+            padding-left:40px;
+        }
+
+        /* VISIT BUTTON */
+        .register-btn{
+
+            display:block;
+
+            width:180px;
+
+            margin:35px auto;
+
+            text-align:center;
+
+            background:linear-gradient(to right,
+            #00c853,
+            #009624);
+
+            color:white !important;
+
+            padding:14px;
+
+            border-radius:35px;
+
+            font-size:20px;
+
+            font-weight:bold;
+        }
+
+        /* HERO IMAGE */
+        .hero{
+
+            background-image:url("photo2_2026-04-02_07-33-18.jpg");
+
+            height:100vh;
+
+            background-position:center;
+
+            background-repeat:no-repeat;
+
+            background-size:100% 100%;
+
+            position:relative;
+        }
+
+        /* DARK OVERLAY */
+        .hero::after{
+
+            content:"";
+
+            position:absolute;
+
+            width:100%;
+            height:100%;
+
+            background:rgba(0,0,0,0.40);
+        }
+
+        /* WELCOME TEXT */
+        .welcome-text{
+
+            position:absolute;
+
+            top:50%;
+            left:50%;
+
+            transform:translate(-50%,-50%);
+
+            color:white;
+
+            text-align:center;
+
+            width:85%;
+
+            z-index:2;
+
+            font-size:32px;
+
+            font-weight:bold;
+
+            line-height:1.8;
+
+            text-shadow:3px 3px 10px black;
+
+            animation:welcome 4s ease;
+        }
+
+        /* ANIMATION */
+        @keyframes welcome{
+
+            from{
+                opacity:0;
+                transform:translate(-50%,-40%);
+            }
+
+            to{
+                opacity:1;
+                transform:translate(-50%,-50%);
+            }
+        }
+
+        /* CARD */
+        .about-card{
+
+            width:60%;
+margin:auto;
+margin-top:50px;
+
+            background:white;
+
+            padding:40px;
+
+            border-radius:30px;
+
+            text-align:center;
+
+            box-shadow:0 0 20px rgba(0,0,0,0.12);
+
+            transition:0.4s;
+        }
+
+        .about-card:hover{
+
+            transform:translateY(-5px);
+        }
+
+        /* TITLE INSIDE CARD */
+        .about-card h2{
+
+            margin-top:10px;
+
+            font-size:34px;
+
+            color:#222;
+        }
+
+        /* TEXT */
+        .about-card p{
+
+            font-size:19px;
+
+            line-height:1.9;
+
+            color:#555;
+
+            margin-top:20px;
+        }
+
+        /* FOOTER */
+        footer{
+
+            margin-top:60px;
+
+            background:linear-gradient(to right,
+            #8b4513,
+            #c46b32);
+
+            color:white;
+
+            text-align:center;
+
+            padding:40px 20px;
+        }
+
+        footer p{
+
+            color:white;
+
+            font-size:17px;
+
+            line-height:1.8;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <!-- LOGO -->
+        <a href="home.html">
+
+            <img src="Photo_2026-05-13_04-41-12.jpg"
+            class="logo">
+
+        </a>
+
+        <!-- TITLE -->
+        <div class="nav-title">
+
+            ABAJIFAR PALACE
+
+        </div>
+
+        <!-- MENU ICON -->
+        <div class="menu-icon"
+        onclick="openmenu()">
+
+            ☰
+
+        </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="menu"
+    id="menu">
+
+        <!-- CLOSE -->
+        <div class="close-btn"
+        onclick="closemenu()">
+
+            ✖️
+
+        </div>
+
+        <!-- LINKS -->
+        <a href="home.html">Home</a>
+
+        <a href="history.html">History</a>
+
+        <a href="feature.html">Features</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="visit.html">Visit</a>
+<a href="Contact.html">Contact</a>
+        <!-- BUTTON -->
+        <a href="form.html"
+        class="register-btn">
+
+            Regster to Visit
+
+        </a>
+
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+
+        <div class="welcome-text">
+
+            
+
+            <br>
+             
+            Abajifar palace is  asymbol of the reach history,Culture,
+            and Leadership of the Jimma Kingdom.Visitors from different  places come to
+explore its traditional architechture,peaceful enviroment,and important cultural heritage.
+
+        </div> 
+
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about-card">
+
+        <h2>
+
+            ABAJIFAR  PALACE
+
+        </h2>
+
+        <p>
+
+            Abajifar Palace is one of the most important
+            historical places in Ethiopia. The palace was
+            built by King Abba Jifar II and served as the
+            royal residence and administrative center of
+            the Jimma Kingdom. Today, the palace represents
+            the history, culture, beauty, and leadership
+            traditions of the Oromo people.
+            Its historic atmosphere,traditional architecture,and natural beuty make it one of
+            Ethiopia's most remarkable cultural destinations.
+
+        </p>
+
+    </div>
+
+    <!- HISTORY -->
+    <div class="about-card">
+
+        <h2>
+
+            Historical Place
+
+        </h2>
+
+        <p>
+
+            King Abba Jifar II was known for his wise
+            leadership, peaceful diplomacy, and strong
+            administration. The palace became a center
+            of political, cultural, and social activities
+            during his reign and remains an important
+            symbol of Ethiopian history today.
+            Abajifar Palace is an important place from the past that has historical and cultural value.
+            It is connected with King Abba Jifar II,the Jimma Kingdom,and the history of Ethiopia.
+
+        </p>
+
+    </div>
+
+    <!-- BEAUTY -->
+    <div class="about-card">
+
+        <h2>
+
+            Beauty and Architecture
+
+        </h2>
+
+        <p>
+ The palace is admired for its traditional
+            Oromo architectural style, natural beauty,
+            peaceful environment, and historical design.
+            The use of wood and local materials reflects
+            the creativity and craftsmanship of the period.
+            Abajifar palace is admired for its beutiful traditional 
+            architecture and peaceful natural surroundings.
+            Its historical design ,cultural beuty ,and natural enviroment make 
+            the palace one of the most attractive places to Visit.
+
+        </p>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+
+            © 2026 Jimma Abajifar Palace.
+            All Rights Reserved.
+
+        </p>
+
+        <p>
+
+            Developed by Raji Zerihun
+
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function openmenu(){
+
+            document.getElementById("menu")
+            .style.right = "0";
+        }
+ function closemenu(){
+
+            document.getElementById("menu")
+            .style.right = "-320px";
+        }
+
+    </script>
+
+</body>
+
+</html>

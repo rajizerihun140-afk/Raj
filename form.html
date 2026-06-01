@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abajifar Palace Registration</title>
+
+<style>
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to right,#000000,#2c2c2c);
+    color:white;
+    padding:30px;
+}
+
+form{
+    background:white;
+    color:black;
+    width:400px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.5);
+}
+
+h2{
+    text-align:center;
+    color:#ff9800;
+    margin-bottom:20px;
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid gray;
+    font-size:15px;
+}
+
+.radio-group{
+    margin-bottom:15px;
+}
+
+.radio-group input{
+    width:auto;
+}
+
+button{
+    width:48%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.submit-btn{
+    background:#ff9800;
+    color:white;
+}
+
+.reset-btn{
+    background:black;
+    color:white;
+}
+
+button:hover{
+    opacity:0.8;
+}
+
+.footer{
+    text-align:center;
+    margin-top:20px;
+    color:white;
+    font-size:18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Abajifar Palace Registration Form</h2>
+
+<form>
+
+Name:
+<input type="text" placeholder="Enter your name">
+
+Email:
+<input type="email" placeholder="Enter your email">
+
+Age:
+<input type="number" placeholder="Enter your age">
+
+Phone:
+<input type="tel" placeholder="Enter phone number">
+
+Country:
+<input type="text" placeholder="Enter your country">
+
+Visit Experience:
+<select>
+    <option>First Time Visit</option>
+    <option>Visited Before</option>
+    <option>Regular Visitor</option>
+</select>
+
+<div class="radio-group">
+
+Gender:<br><br>
+
+<input type="radio" name="g"> Male
+
+<input type="radio" name="g"> Female
+
+</div>
+
+<br>
+
+Favorite Color:
+<input type="color">
+
+<button type="submit" class="submit-btn">
+Submit
+</button>
+
+<button type="reset" class="reset-btn">
+Reset
+</button>
+
+</form>
+
+<div class="footer">
+    Developed by Raji Zerihun
+</div>
+
+</body>
+</html>

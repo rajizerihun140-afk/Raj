@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beautiful Contact Page</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#000000,#1f1f1f);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+/* CONTACT BOX */
+
+.contact-box{
+    width:90%;
+    max-width:550px;
+    background:white;
+    margin:70px auto;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.contact-box h1{
+    color:#ff9800;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.contact-box p{
+    color:gray;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+/* SOCIAL ICONS */
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    width:70px;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:34px;
+    transition:0.4s;
+    color:white;
+}
+
+.social-links a:hover{
+    transform:scale(1.15);
+}
+
+/* ICON COLORS */
+
+.telegram{
+    background:#0088cc;
+}
+
+.facebook{
+    background:#1877f2;
+}
+
+.youtube{
+    background:#ff0000;
+}
+
+.instagram{
+    background:linear-gradient(
+        45deg,
+        #f9ce34,
+        #ee2a7b,
+        #6228d7
+    );
+}
+
+.tiktok{
+    background:#000;
+    border:2px solid white;
+}
+
+.whatsapp{
+    background:#25d366;
+}
+
+/* FOOTER */
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    border-top:4px solid #ff9800;
+}
+
+footer h2{
+    color:#ff9800;
+    font-size:30px;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+footer p{
+    margin:6px 0;
+    font-size:17px;
+}
+
+.note{
+    color:#cccccc;
+    font-style:italic;
+    margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- CONTACT SECTION -->
+
+<div class="contact-box">
+
+    <h1>Contact Us</h1>
+
+    <p>
+        Follow us on social media platforms and stay connected.
+    </p>
+
+    <div class="social-links">
+
+        <!-- Telegram -->
+        <a href="https://t.me/yourtelegram" class="telegram" target="_blank">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://facebook.com/yourpage" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://youtube.com/@yourchannel" class="youtube" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/youraccount" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://tiktok.com/@youraccount" class="tiktok" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/251900000000" class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>Abajifar Palace</h2>
+
+    <p>Historic Heritage Site</p>
+
+    <p class="note">
+        Thank you for visiting our website.
+    </p>
+
+</footer>
+
+</body>
+</html>
